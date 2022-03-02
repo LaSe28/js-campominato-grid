@@ -1,116 +1,56 @@
-let grill = document.querySelector('.griglia')
+let easyGrill = document.querySelector('.griglia-easy')
+let mediumGrill = document.querySelector('.griglia-medium')
+let hardGrill = document.querySelector('.griglia-hard')
 let btnPlay = document.querySelector('#play')
-
 let sum = 0;
-let square = document.createElement(`div`);
+let square;
+
 let difficulty = document.querySelector('#difficulty');
 
 
 difficulty.addEventListener('change' , function(){
+
     btnPlay.addEventListener('click', function(){
-        
         if (difficulty.value == 'easy'){
-            grill.classList.remove('hidden')
-            
+            easyGrill.classList.add('show')
+            mediumGrill.classList.remove('show')
+            hardGrill.classList.remove('show')
             for ( e = 1; e <= 49; e++){
                 sum += e
                 square = document.createElement(`div`);
-                square.classList.add('box-easy')
                 square.classList.add('box')
                 square.innerHTML= e
-                grill.append(square)
+                easyGrill.append(square)
             }
         }
-    })
-    
-})
-
-difficulty.addEventListener('change' , function(){
-    btnPlay.addEventListener('click', function(){
-
         if (difficulty.value == 'medium'){
-            grill.classList.remove('hidden')    
+            easyGrill.classList.remove('show')
+            mediumGrill.classList.add('show')
+            hardGrill.classList.remove('show')
+
             for ( m = 1; m <= 81; m++){
                 sum += m
                 square = document.createElement(`div`);
-                square.classList.add('box-medium')
                 square.classList.add('box')
                 square.innerHTML= m
-                grill.append(square)
+                mediumGrill.append(square)
             }
         }
-    })
-    
-})
-
-difficulty.addEventListener('change' , function(){
-    btnPlay.addEventListener('click', function(){
-
         if (difficulty.value == 'hard'){
-            grill.classList.remove('hidden')   
+            easyGrill.classList.remove('show')
+            mediumGrill.classList.remove('show')
+            hardGrill.classList.add('show')
+    
             for ( h = 1; h <= 100; h++){
                 sum += h
                 square = document.createElement(`div`);
-                square.classList.add('box-hard')
                 square.classList.add('box')
                 square.innerHTML= h
-                grill.append(square)
+                hardGrill.append(square)
             }
         }
     })
-
 })
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

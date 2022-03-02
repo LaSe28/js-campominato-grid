@@ -18,15 +18,7 @@ body{
     padding-top:10rem;
 }
 
-.box-hard{
-    width: 45px;
-    height: 45px;
-    border: 1px solid black;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.box-medium{
+.box{
     width: 50px;
     height: 50px;
     border: 1px solid black;
@@ -34,16 +26,16 @@ body{
     justify-content: center;
     align-items: center;
 }
-.box-easy{
-    width: 64.28px;
-    height: 64.28px;
-    border: 1px solid black;
+
+.griglia-easy{
+    width: 350px;
+    height: 350px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
 }
 
-.griglia{
+
+.griglia-medium{
     width: 450px;
     height: 450px;
     display: flex;
@@ -51,11 +43,22 @@ body{
 
 }
 
+.griglia-hard{
+    width: 500px;
+    height: 500px;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.active{
+    background-color: navy;
+}
+
 .hidden{
     display: none;
 }
 
-.active{
-    color: white;
-    background-color: navy;
+.show{
+    display: flex;
 }

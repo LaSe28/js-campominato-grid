@@ -4,8 +4,25 @@
     box-sizing: border-box;
 }
 
+html{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
 body{
-    background-color: lightskyblue;
+    background-color: rgb(147, 211, 184)
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 4rem;
+    background-color: white;
+    color: navy;
+}
+
+header button{
+    padding: 0.2em 0.7em;
 }
 
 .container{
@@ -53,6 +70,7 @@ body{
 
 .active{
     background-color: navy;
+    color: white;
 }
 
 .hidden{

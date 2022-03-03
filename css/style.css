@@ -28,11 +28,19 @@ header button{
 .container{
     width: 700px;
     margin: 0 auto;
+}
+
+main .container{
     display: flex;
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    padding-top:10rem;
+    height: calc(100vh - 8rem);
+}
+
+footer{
+    height: 4rem;
+    background-color: white;
 }
 
 .box{
@@ -44,28 +52,18 @@ header button{
     align-items: center;
 }
 
-.griglia-easy{
-    width: 350px;
-    height: 350px;
-    display: flex;
-    flex-wrap: wrap;
+.box:hover{
+    cursor: pointer;
 }
 
 
-.griglia-medium{
-    width: 450px;
-    height: 450px;
-    display: flex;
-    flex-wrap: wrap;
 
-}
 
-.griglia-hard{
+.griglia{
     width: 500px;
     height: 500px;
     display: flex;
     flex-wrap: wrap;
-
 }
 
 .active{
